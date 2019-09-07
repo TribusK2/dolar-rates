@@ -1,34 +1,15 @@
-{% extends 'base.html.twig' %}
+{% extends 'rates/table.html.twig' %}
 
-{% block title %}NBP API{% endblock %}
-
-{% block body %}
-    
-    <div class="row justify-content-center mb-5">
-        <div class="col col-md-7">       
-            <table class="table table-bordered text-center">
-                <thead class="thead-dark">
-                    <tr>
-                        <th scope="col"></th>
-                        <th scope="col">Od</th>
-                        <th scope="col">Do</th>
-                        <th scope="col">Ask</th>
-                        <th scope="col">Bid</th>
-                    </tr>
-                </thead>
+{% block tbody1 %}
                 <tbody>
                     <tr>
                         <th scope="row" colspan="5">Brak danych</th>
                     </tr>
                 </tbody>
             </table>
-        </div>
-    </div>
+{% endblock tbody1 %}
 
-    <!-- Result table -->
-    <div class="row justify-content-center">
-        <div class="col col-md-6">
-  
+{% block table2 %}
             <table class="table table-striped text-center">
                 <thead class="thead-dark">
                     <tr>
@@ -45,8 +26,4 @@
                     </tr>
                 </tbody>
             </table>
-
-        </div>
-    </div>
-    <!-- Result table end -->
-{% endblock %}
+{% endblock table2 %}
