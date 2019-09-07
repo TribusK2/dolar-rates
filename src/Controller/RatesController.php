@@ -101,6 +101,7 @@ class RatesController extends AbstractController
 
         return $this->render('rates/index.html.twig', [
             'controller_name' => 'RatesController',
+            'startDate' => '',
         ]);
     }
 }
