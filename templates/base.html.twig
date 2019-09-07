@@ -1,12 +1,17 @@
 <!DOCTYPE html>
-<html>
+<html lang="pl">
     <head>
         <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
         <title>{% block title %}Welcome!{% endblock %}</title>
+        <link rel="stylesheet" href="{{ asset('cdn/bootstrap.css')}}">
         {% block stylesheets %}{% endblock %}
     </head>
     <body>
         {% block body %}{% endblock %}
+         <script src="{{ asset('cdn/jquery.js') }}"></script>
+        <script src="{{ asset('cdn/bootstrap.js') }}"></script>
         {% block javascripts %}{% endblock %}
     </body>
 </html>
