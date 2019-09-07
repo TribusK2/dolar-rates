@@ -3,7 +3,88 @@
 {% block title %}NBP API{% endblock %}
 
 {% block body %}
-<h1 class="text-primary">NBP API</h1>
+    <h2 class="text-primary p-2">NBP API</h2>
+    <p class="text-secondary p-2 py-0">Pobierz notowania dolara i sprawdź ile mogłeś zarobić (lub stracić :)) </p>
 
+    <!-- Query date form -->
+    <div class="row justify-content-center m-3">
+        <form class="row form-inline">
+            <div class="form-group mx-3 mb-2">
+                <div class="col">
+                    <label class="mx-3 mb-2" for="queryDate">Podaj datę</label>  
+                    <input type="date" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+                    <small id="emailHelp" class="form-text text-muted">Dane dostępne z ostatnich 93 dni.</small>
+                </div>
+            </div>
+            <button type="submit" class="btn btn-primary">Pobierz dane</button>
+        </form>
+    </div>
+    <!-- Query date form end -->
+    <hr>
 
+    <div class="row justify-content-center mb-5">
+        <div class="col col-md-6">       
+            <table class="table table-bordered text-center">
+                <thead class="thead-dark">
+                    <tr>
+                        <th scope="col"></th>
+                        <th scope="col">Od</th>
+                        <th scope="col">Do</th>
+                        <th scope="col">Ask</th>
+                        <th scope="col">Bid</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th scope="row">Zmiana kursu</th>
+                        <td>2019.08.08</td>
+                        <td>2019.08.08</td>
+                        <td>3.567</td>
+                        <td>3.456</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <!-- Result table -->
+    <div class="row justify-content-center">
+        <div class="col col-md-6">       
+            <table class="table table-striped text-center">
+                <thead class="thead-dark">
+                    <tr>
+                        <th scope="col">Lp</th>
+                        <th scope="col">Waluta</th>
+                        <th scope="col">Data</th>
+                        <th scope="col">Ask</th>
+                        <th scope="col">Bid</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th scope="row">1</th>
+                        <td>USD</td>
+                        <td>2019.08.08</td>
+                        <td>3.567</td>
+                        <td>3.456</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">2</th>
+                        <td>USD</td>
+                        <td>2019.08.07</td>
+                        <td>3.567</td>
+                        <td>3.456</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">3</th>
+                        <td>USD</td>
+                        <td>2019.08.06</td>
+                        <td>3.567</td>
+                        <td>3.456</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <!-- Result table end -->
 {% endblock %}
