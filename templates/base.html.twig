@@ -9,8 +9,10 @@
         {% block stylesheets %}{% endblock %}
     </head>
     <body>
+        {{ include('rates/header.html.twig') }}
         {% block body %}{% endblock %}
-         <script src="{{ asset('cdn/jquery.js') }}"></script>
+        {{ include('rates/footer.html.twig') }}
+        <script src="{{ asset('cdn/jquery.js') }}"></script>
         <script src="{{ asset('cdn/bootstrap.js') }}"></script>
         {% block javascripts %}{% endblock %}
     </body>
