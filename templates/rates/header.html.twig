@@ -4,3 +4,21 @@
       Dollar rates
     </a>
 </nav>
+
+<h2 class="text-primary p-2">NBP API</h2>
+<p class="text-secondary p-2 py-0">Notowania dolara</p>
+<!-- Query date form -->
+<div class="row justify-content-center m-3">
+    <form class="row form-inline align-items-start" method="POST">
+        <label class="ml-3 mb-2 mt-1 pt-1" for="queryDate">Podaj datę</label>
+        <div class="form-group mx-1 mb-2">
+            <div class="col-12 justify-content-left">
+                <input type="date" name="date" class="form-control" id="inputDate">
+                <small id="emailHelp" class="form-text text-muted">Dane dostępne z ostatnich 367 dni notowań.</small>
+            </div>
+        </div>
+        <button type="submit" class="btn btn-primary ml-3 ml-sm-0">Pobierz dane</button>
+    </form>
+</div>
+<!-- Query date form end -->
+<hr>
