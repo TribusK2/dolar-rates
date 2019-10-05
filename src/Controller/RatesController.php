@@ -10,7 +10,7 @@ use Symfony\Component\HttpFoundation\Response;
 class RatesController extends AbstractController
 {
     /**
-     * @Route("/rates", name="rates")
+     * @Route("kursy-walut/rates", name="rates")
      */
     public function index(Request $request)
     {

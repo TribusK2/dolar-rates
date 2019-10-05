@@ -2,13 +2,18 @@
 <html lang="pl">
     <head>
         <meta charset="UTF-8">
+        <meta name="description" content="Aplikacja do wyświetlania kuru walut na podstawie danych z NBP">
+        <meta name="keywords" content="alikacja,kurs,walut,dolar,nbp,api">
+        <meta name="author" content="Krzysztof Rytlewski">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
         <title>{% block title %}Welcome!{% endblock %}</title>
+        <link rel="icon" href="./img/logoXSmall.jpg">
+        <link rel="icon" href="{{ asset('img/dollar-coin-money.png')}}">
         <link rel="stylesheet" href="{{ asset('cdn/bootstrap.css')}}">
         {% block stylesheets %}{% endblock %}
     </head>
-    <body>
+    <body class="bg-light">
         {{ include('rates/header.html.twig') }}
         {% block body %}{% endblock %}
         {{ include('rates/footer.html.twig') }}
